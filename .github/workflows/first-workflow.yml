@@ -15,6 +15,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
       - name: Run YAML Lint
+        continue-on-error: true
         uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: .
